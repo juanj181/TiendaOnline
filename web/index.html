@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet"></link>
+        <link href="lib/css/juanjo.css" rel="stylesheet"></link>
+        <script src="lib/jquery/jquery-2.1.0.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="lib/angular/angular-locale_es-es.js"></script>
+        <script src="index.js"></script>
+        <script src="categorias/categorias.js"></script>
+
+    </head>
+    <body align="center" ng-controller="IndexController">
+        <div class="page-header">
+            <a href="index.html"> <h1>TiendaOnline </a><small>Ventra de articulos</small></h1>
+    </div>
+    <div class="btn-group" >
+        <a href="#/categorias/list"><button type="button" class="btn btn-default">List</button></a>
+        <a href="#/categorias/edit/5"><button type="button" class="btn btn-default">Edit</button></a>
+        <a href="#/categorias/new"><button type="button" class="btn btn-default">New</button></a>
+        <a href="#/categorias/delete/4"><button type="button" class="btn btn-default">Delete</button></a>
+    </div>
+    <div class="space"></div>
+    <div class="main" ng-view>
+        
+
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
