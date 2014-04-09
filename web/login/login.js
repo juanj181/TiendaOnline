@@ -13,6 +13,12 @@ app.config(function($routeProvider) {
                 controller: "LoginEditController"
             }
     );
+    $routeProvider.when('/login/login',
+            {
+                templateUrl: 'login/login.html',
+                controller: "LoginController"
+            }
+    );
 
 
     $routeProvider.when('/login/new',
@@ -34,14 +40,14 @@ app.config(function($routeProvider) {
 
 app.controller("LoginListController", function($scope, $routeParams) {
     $scope.nombrePagina = "UsuarioList";
-    
-    
+
+
 
 });
 
 app.controller("LoginEditController", function($scope, $routeParams) {
     $scope.nombrePagina = "UsuarioEdit";
-    $scope.idCategoria =  $routeParams.idUsuario;
+    $scope.idCategoria = $routeParams.idUsuario;
 
 });
 
@@ -54,6 +60,11 @@ app.controller("LoginDeleteController", function($scope, $routeParams) {
     $scope.nombrePagina = "UsuarioDelete";
     $scope.idCategoria = $routeParams.idUsuario;
 
+});
+
+app.controller("LoginController", function($scope, $routeParams){
+    $scope.nombrePagina="login";
+    
 });
 
 

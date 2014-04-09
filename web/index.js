@@ -5,7 +5,7 @@ app.config(function($routeProvider) {
 
     $routeProvider.otherwise(
             {
-                redirectTo: '/categorias/list'
+                redirectTo: 'login'
 
             }
     );
