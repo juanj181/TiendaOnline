@@ -13,18 +13,29 @@
         <script src="lib/angular/angular-locale_es-es.js"></script>
         <script src="index.js"></script>
         <script src="categorias/categorias.js"></script>
+        <script src="login/login.js"></script>
 
     </head>
-    <body align="center" ng-controller="IndexController">
-        <div class="page-header">
+    <body ng-controller="IndexController">
+        <div class="page-header centrar">
             <a href="index.html"> <h1>TiendaOnline </a><small>Ventra de articulos</small></h1>
     </div>
+        <div class="bg-primary">
+    <div class="btn-group margen-izq" >
+        <a href="#login"><button type="button" class="btn btn-default">Login</button></a>
+        <a href="#/login/edit/5"><button type="button" class="btn btn-default">Comprar</button></a>
+        <a href="#/login/new"><button type="button" class="btn btn-default">Vender</button></a>
+        <a href="#/login/delete/4"><button type="button" class="btn btn-default">Delete</button></a>
+    </div>
+        </div>
+        <!--
     <div class="btn-group" >
         <a href="#/categorias/list"><button type="button" class="btn btn-default">List</button></a>
         <a href="#/categorias/edit/5"><button type="button" class="btn btn-default">Edit</button></a>
         <a href="#/categorias/new"><button type="button" class="btn btn-default">New</button></a>
         <a href="#/categorias/delete/4"><button type="button" class="btn btn-default">Delete</button></a>
     </div>
+        -->
     <div class="space"></div>
     <div class="main" ng-view>
         

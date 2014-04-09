@@ -5782,4 +5782,21 @@ button.close {
     display: none !important;
   }
 }
+
+
+.main{
+    height:700px;
+    border:Gainsboro solid 1px;
+    padding-top:25px;
+}
+
+.space{
+    height:22px;
+}
+.centrar{
+    text-align: center; 
+}
+.margen-izq{
+    margin-left: 25px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
