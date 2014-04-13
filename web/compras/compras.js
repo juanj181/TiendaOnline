@@ -1,5 +1,5 @@
 app.config(function($routeProvider) {
-    $routeProvider.when('/compras/compras',
+    $routeProvider.when('/compras/compras/:idProvincia',
             {
                 templateUrl: 'compras/compras.html',
                 controller: "ComprasController"
@@ -8,7 +8,8 @@ app.config(function($routeProvider) {
 });
 
 
-app.controller("ComprasController", function($scope, $routeParams){
-    $scope.nombrePagina="compras";
-    
+app.controller("ComprasController", function($scope, $routeParams) {
+    $scope.nombrePagina = "compras";
+    $scope.idProvincia = $routeParams.idProvincia;
+
 });

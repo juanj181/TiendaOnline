@@ -10,5 +10,25 @@ and open the template in the editor.
     </head>
     <body>
         <div>MENSAJES</div>
-    </body>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <td>id</td>
+                <td>nombre</td>
+                <td>codigo</td>
+                <td>acciones</td>
+            </thead>
+        <tbody>
+            <tr ng-repeat="provincia in provincias">
+                <td>{{provincia.idProvincia}}</td>
+                <td>{{provincia.nombre}}</td>
+                <td>{{provincia.codigo}}</td>
+                <td>
+                    <a class="btn btn-info" href="#/compras/compras/{{provincia.idProvincia}}">editar</a>
+                    <a class="btn btn-warning" href="#/ventas/ventas/{{provincia.idProvincia}}">borrar</a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
 </html>
